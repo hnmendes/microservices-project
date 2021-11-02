@@ -4,12 +4,12 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:1743",
+      "applicationUrl": "http://localhost:17134",
       "sslPort": 0
     }
   },
   "profiles": {
-    "Catalog.API": {
+    "Catalog.Api": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

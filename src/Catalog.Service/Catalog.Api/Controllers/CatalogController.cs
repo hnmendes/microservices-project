@@ -41,7 +41,7 @@ namespace Catalog.Api.Controllers
         }
 
         [HttpGet]
-        [Route("/category/{category}")]
+        [Route("category/{category}")]
         [ProducesResponseType(typeof(IEnumerable<Product>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<Product>>> GetProductByCategory(string category)
         {
@@ -50,7 +50,7 @@ namespace Catalog.Api.Controllers
         }
 
         [HttpGet]
-        [Route("/name/{name}")]
+        [Route("name/{name}")]
         [ProducesResponseType(typeof(IEnumerable<Product>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<Product>>> GetProductByName(string name)
         {

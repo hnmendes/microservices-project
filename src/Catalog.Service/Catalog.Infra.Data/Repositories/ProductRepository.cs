@@ -1,6 +1,7 @@
 ﻿using Catalog.Domain.Contracts.Repositories;
 using Catalog.Domain.Entities;
 using Catalog.Infra.Data.Mongo.Contexts.Contracts;
+using Catalog.Infra.Data.Mongo.Seed;
 using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace Catalog.Infra.Data.Repositories
 
         public ProductRepository(IMongoDbContext productContext, IConfiguration configuration) : base(productContext, configuration)
         {
-
+            CatalogContextSeed.SeedData(_dbCollection);
         }
 
         public async Task<IEnumerable<Product>> GetByCategory(string categoryName)

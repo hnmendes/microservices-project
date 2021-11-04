@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Infra.CrossCutting"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Application", "src\Catalog.Service\Catalog.Application\Catalog.Application.csproj", "{30817852-A18D-43F9-A48D-64B98BBE0400}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{F36B0B3B-AED7-4098-A472-2B9B782DBB53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{30817852-A18D-43F9-A48D-64B98BBE0400}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30817852-A18D-43F9-A48D-64B98BBE0400}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30817852-A18D-43F9-A48D-64B98BBE0400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F36B0B3B-AED7-4098-A472-2B9B782DBB53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F36B0B3B-AED7-4098-A472-2B9B782DBB53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F36B0B3B-AED7-4098-A472-2B9B782DBB53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F36B0B3B-AED7-4098-A472-2B9B782DBB53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

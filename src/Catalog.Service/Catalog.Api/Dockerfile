@@ -14,7 +14,7 @@ COPY ["src/Catalog.Service/Catalog.Infra.Data/Catalog.Infra.Data.csproj", "src/C
 COPY ["src/Catalog.Service/Catalog.Domain/Catalog.Domain.csproj", "src/Catalog.Service/Catalog.Domain/"]
 RUN dotnet restore "src/Catalog.Service/Catalog.Api/Catalog.Api.csproj"
 COPY . .
-WORKDIR "/src/src/Catalog.Service/Catalog.Api"
+WORKDIR "/src/Catalog.Service/Catalog.Api"
 RUN dotnet build "Catalog.Api.csproj" -c Release -o /app/build
 
 FROM build AS publish

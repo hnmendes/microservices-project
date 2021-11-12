@@ -5,4 +5,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Catalog.Service\Catalog.Application\Catalog.Application.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -20,7 +20,6 @@ namespace Ordering.Application.Exceptions
                 .ToDictionary(failureGroup => failureGroup.Key, failureGroup => failureGroup.ToArray());
         }
 
-
         public IDictionary<string, string[]> Errors { get; }
 }
 }

@@ -1,7 +1,4 @@
 ﻿using FluentValidation.Results;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Ordering.Application.Exceptions
 {
@@ -21,5 +18,5 @@ namespace Ordering.Application.Exceptions
         }
 
         public IDictionary<string, string[]> Errors { get; }
-}
+    }
 }

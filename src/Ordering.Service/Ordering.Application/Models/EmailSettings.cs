@@ -2,8 +2,10 @@
 {
     public class EmailSettings
     {
-        public string ApiKey { get; set; }
-        public string FromAddress { get; set; }
         public string FromName { get; set; }
+        public string Domain { get; set; }
+        public int Port { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
     }
 }

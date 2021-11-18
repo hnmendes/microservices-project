@@ -1,6 +1,6 @@
-﻿using MediatR;
-using System;
-using System.Collections.Generic;
+﻿
+
+using MediatR;
 
 namespace Ordering.Application.Features.Orders.Queries.GetOrderList
 {
@@ -12,6 +12,5 @@ namespace Ordering.Application.Features.Orders.Queries.GetOrderList
         {
             UserName = userName ?? throw new ArgumentNullException(nameof(userName));
         }
-
     }
 }

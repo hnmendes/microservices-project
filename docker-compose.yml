@@ -7,6 +7,12 @@ services:
   basketdb:
     image: redis:alpine
 
+  discountdb:
+    image: postgres
+
+  pgadmin:
+    image: dpage/pgadmin4
+
   orderdb:
     image: mcr.microsoft.com/mssql/server:2017-latest
 
@@ -28,6 +34,12 @@ services:
       context: .
       dockerfile: src/Basket.Service/Basket.Api/Dockerfile
 
+  discount.api:
+    image: ${DOCKER_REGISTRY-}discountapi
+    build:
+      context: .
+      dockerfile: src/Discount.Service/Discount.API/Dockerfile
+
   ordering.api:
     image: ${DOCKER_REGISTRY-}orderingapi
     build:
@@ -37,4 +49,6 @@ services:
 volumes:
   mongo_data:
   portainer_data:
+  postgres_data:
+  pgadmin_data:
   

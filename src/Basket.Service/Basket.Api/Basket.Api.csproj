@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\BuildingBlocks\EventBus.Messages\EventBus.Messages.csproj" />
     <ProjectReference Include="..\Basket.Infra.Data\Basket.Infra.Data.csproj" />
   </ItemGroup>
 

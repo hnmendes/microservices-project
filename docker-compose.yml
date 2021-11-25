@@ -38,7 +38,7 @@ services:
     image: ${DOCKER_REGISTRY-}discountapi
     build:
       context: .
-      dockerfile: src/Discount.Service/Discount.API/Dockerfile
+      dockerfile: src/Discount.Service/Discount.Api/Dockerfile
 
   ordering.api:
     image: ${DOCKER_REGISTRY-}orderingapi

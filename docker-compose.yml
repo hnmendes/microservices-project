@@ -40,6 +40,12 @@ services:
       context: .
       dockerfile: src/Discount.Service/Discount.Api/Dockerfile
 
+  discount.grpc:
+    image: ${DOCKER_REGISTRY-}discountgrpc
+    build:
+      context: .
+      dockerfile: src/Discount.Service/Discount.Grpc/Dockerfile
+
   ordering.api:
     image: ${DOCKER_REGISTRY-}orderingapi
     build:

@@ -37,7 +37,16 @@ namespace Ordering.Application.Features.Orders.Commands.CheckoutOrder
 
         private async Task SendMail(Order order)
         {
-            var email = new Email() { To = order.EmailAddress, Body = $"Order was created.", Subject = "Order was created" };
+            var body = $@"<h1>Order was created</h1>
+                          <br><br>
+                          <p>Your order has been created successfuly, {order.FirstName} {order.LastName}.</p>
+                          <br><br>
+                          <p><strong>Details:</strong></p>
+                          <br><br>
+                          <p>Created on: {order.CreatedOn.ToString("dd/MM/yyyy - hh:mm")}</p>
+                          <p>Total Price: {order.TotalPrice}</p>";
+
+            var email = new Email() { To = order.EmailAddress, Body = body , Subject = "Order was created" };
 
             try
             {

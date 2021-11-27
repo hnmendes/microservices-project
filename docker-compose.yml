@@ -16,6 +16,9 @@ services:
   orderdb:
     image: mcr.microsoft.com/mssql/server:2017-latest
 
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+
   portainer:
     image: portainer/portainer-ce
 
@@ -35,7 +38,13 @@ services:
     image: ${DOCKER_REGISTRY-}discountapi
     build:
       context: .
-      dockerfile: src/Discount.Service/Discount.API/Dockerfile
+      dockerfile: src/Discount.Service/Discount.Api/Dockerfile
+
+  discount.grpc:
+    image: ${DOCKER_REGISTRY-}discountgrpc
+    build:
+      context: .
+      dockerfile: src/Discount.Service/Discount.Grpc/Dockerfile
 
   ordering.api:
     image: ${DOCKER_REGISTRY-}orderingapi

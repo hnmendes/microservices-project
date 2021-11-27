@@ -13,7 +13,7 @@ namespace Basket.Domain.Entities
         {
             get
             {
-                return Items.Sum(i => i.Price * i.Amount);                
+                return Items.Sum(i => i.Price * i.Quantity);                
             }
         }
 

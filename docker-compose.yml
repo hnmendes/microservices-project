@@ -56,7 +56,7 @@ services:
     image: ${DOCKER_REGISTRY-}ocelotapigateway
     build:
       context: .
-      dockerfile: src/ApiGateways/OcelotApiGateway/Dockerfile
+      dockerfile: src/Gateway.Api/OcelotApiGw/Dockerfile
 
 volumes:
   mongo_data:

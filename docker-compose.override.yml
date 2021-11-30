@@ -122,8 +122,6 @@ services:
     volumes:
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
-
-
   ocelotapigateway:
     container_name: ocelotapigw
     environment:

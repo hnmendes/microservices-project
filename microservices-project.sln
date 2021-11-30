@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31912.275
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog.Service", "Catalog.Service", "{55E4B913-F889-4131-90CE-D54C2F087013}"
 EndProject
@@ -42,6 +42,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Messages", "src\BuildingBlocks\EventBus.Messages\EventBus.Messages.csproj", "{9F1A2A24-AC5B-45E5-BEF2-143199D28F5B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{4B7151B4-4A34-4682-81E9-335BABDD88B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway.Api", "Gateway.Api", "{FA334E98-CC92-4B60-AAF9-0C60C05DCBED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotApiGw", "src\Gateway.Api\OcelotApiGw\OcelotApiGw.csproj", "{DF8A3249-7E57-454D-A88F-095B811907E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +109,10 @@ Global
 		{9F1A2A24-AC5B-45E5-BEF2-143199D28F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F1A2A24-AC5B-45E5-BEF2-143199D28F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F1A2A24-AC5B-45E5-BEF2-143199D28F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF8A3249-7E57-454D-A88F-095B811907E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF8A3249-7E57-454D-A88F-095B811907E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF8A3249-7E57-454D-A88F-095B811907E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF8A3249-7E57-454D-A88F-095B811907E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -127,6 +135,7 @@ Global
 		{3D3F5642-4B7D-44C4-A01C-29561E6C8C33} = {223EF5FC-D0AF-44A2-B2AB-8AA5A5246EC1}
 		{47242B7B-66DA-40DC-A7F7-A7EAB6EEEAE8} = {223EF5FC-D0AF-44A2-B2AB-8AA5A5246EC1}
 		{9F1A2A24-AC5B-45E5-BEF2-143199D28F5B} = {42724B16-29CC-4F66-B292-7C753A5CFA8D}
+		{DF8A3249-7E57-454D-A88F-095B811907E8} = {FA334E98-CC92-4B60-AAF9-0C60C05DCBED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7D5958CC-4A42-4BEB-8EFB-598D492CEF66}

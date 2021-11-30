@@ -43,7 +43,7 @@ namespace Ordering.Application.Features.Orders.Commands.CheckoutOrder
                           <br><br>
                           <p><strong>Details:</strong></p>
                           <br><br>
-                          <p>Created on: {order.CreatedOn.ToString("dd/MM/yyyy - hh:mm")}</p>
+                          <p>Created on: {order.CreatedOn.ToString("dd/MM/yyyy - HH:mm")}</p>
                           <p>Total Price: {order.TotalPrice}</p>";
 
             var email = new Email() { To = order.EmailAddress, Body = body , Subject = "Order was created" };

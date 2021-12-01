@@ -8,7 +8,7 @@ using Ocelot.Middleware;
 using Ocelot.Cache.CacheManager;
 using Microsoft.Extensions.Configuration;
 
-namespace OcelotApiGw
+namespace Gateway.Api
 {
     public class Startup
     {

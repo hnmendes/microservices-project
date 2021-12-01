@@ -123,7 +123,7 @@ services:
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
   ocelotapigateway:
-    container_name: ocelotapigw
+    container_name: Gateway.Api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     depends_on:

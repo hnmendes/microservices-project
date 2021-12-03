@@ -24,6 +24,15 @@ services:
     restart: always
     ports:
       - "1433:1433"
+
+  userdb:
+    container_name: userdb
+    environment:
+      MSSQL_SA_PASSWORD: "us&rDB123456"
+      ACCEPT_EULA: "Y"
+    restart: always
+    ports:
+      - "1434:1433"
   
   rabbitmq:
     container_name: rabbitmq
@@ -107,6 +116,16 @@ services:
       - discountdb
     ports:
       - "8003:80"
+
+  user.api:
+    container_name: user.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:UserDB=Server=userdb;Database=UserDb;Integrated Security=false;TrustServerCertificate=true;User ID=sa;Password=us&rDB123456;MultipleActiveResultSets=True"
+    depends_on:
+      - userdb
+    ports:
+      - "8009:80"
   
   ordering.api:
     container_name: ordering.api
@@ -131,5 +150,6 @@ services:
         - basket.api
         - discount.api
         - ordering.api
+        - user.api
     ports:
       - "8010:80"

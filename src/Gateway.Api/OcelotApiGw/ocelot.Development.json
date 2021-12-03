@@ -13,7 +13,11 @@
       "UpstreamPathTemplate": "/catalog",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
       "SwaggerKey": "catalog",
-      "FileCacheOptions": { "TtlSeconds": 30 }
+      "FileCacheOptions": { "TtlSeconds": 30 },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
     },
     {
       "DownstreamPathTemplate": "/api/v1/catalog/{id}",
@@ -128,7 +132,11 @@
       ],
       "UpstreamPathTemplate": "/order/{userName}",
       "UpstreamHttpMethod": [ "GET" ],
-      "SwaggerKey": "order"
+      "SwaggerKey": "order",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
     }
   ],
   "SwaggerEndPoints": [

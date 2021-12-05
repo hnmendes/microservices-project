@@ -14,10 +14,10 @@
       "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
       "SwaggerKey": "catalog",
       "FileCacheOptions": { "TtlSeconds": 30 },
-      "AuthenticationOptions": {
+      /*"AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
-      }
+      }*/
     },
     {
       "DownstreamPathTemplate": "/api/v1/catalog/{id}",
@@ -58,7 +58,11 @@
       ],
       "UpstreamPathTemplate": "/basket/{userName}",
       "UpstreamHttpMethod": [ "GET", "DELETE" ],
-      "SwaggerKey": "basket"
+      "SwaggerKey": "basket",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
     },
     {
       "DownstreamPathTemplate": "/api/v1/Basket",
@@ -71,7 +75,11 @@
       ],
       "UpstreamPathTemplate": "/basket",
       "UpstreamHttpMethod": [ "POST" ],
-      "SwaggerKey": "basket"
+      "SwaggerKey": "basket",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
     },
     {
       "DownstreamPathTemplate": "/api/v1/basket/Checkout",
@@ -91,6 +99,10 @@
         "Period": "3s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
       }
     },
     //Discount API
@@ -137,6 +149,33 @@
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
       }
+    },
+    //User API
+    {
+      "DownstreamPathTemplate": "/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": "8009"
+        }
+      ],
+      "UpstreamPathTemplate": "/user/login",
+      "UpstreamHttpMethod": [ "POST" ],
+      "SwaggerKey": "user"
+    },
+    {
+      "DownstreamPathTemplate": "/sign-up",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": "8009"
+        }
+      ],
+      "UpstreamPathTemplate": "/user/sign-up",
+      "UpstreamHttpMethod": [ "POST" ],
+      "SwaggerKey": "user"
     }
   ],
   "SwaggerEndPoints": [
@@ -177,6 +216,16 @@
           "Name": "Order API",
           "Version": "v1",
           "Url": "http://host.docker.internal:8004/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "user",
+      "Config": [
+        {
+          "Name": "User API",
+          "Version": "v1",
+          "Url": "http://host.docker.internal:8009/swagger/v1/swagger.json"
         }
       ]
     }

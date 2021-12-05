@@ -57,9 +57,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "User.Domain", "src\User.Ser
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "User.Infrastructure", "src\User.Service\User.Infra\User.Infrastructure.csproj", "{CA59EB44-297C-4B09-8142-41ACF5615EBC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{934F2DB0-B42C-4AE4-BC71-17B93CFBC9D6}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspnetRunBasics", "src\Frontend\AspnetRunBasics\AspnetRunBasics.csproj", "{E4E63E63-C08F-4EE2-A250-B5F777FBEC13}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{D463878B-239E-47FC-9483-13C928BD4D2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -143,10 +141,6 @@ Global
 		{CA59EB44-297C-4B09-8142-41ACF5615EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA59EB44-297C-4B09-8142-41ACF5615EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA59EB44-297C-4B09-8142-41ACF5615EBC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E4E63E63-C08F-4EE2-A250-B5F777FBEC13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E4E63E63-C08F-4EE2-A250-B5F777FBEC13}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E4E63E63-C08F-4EE2-A250-B5F777FBEC13}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E4E63E63-C08F-4EE2-A250-B5F777FBEC13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -175,7 +169,6 @@ Global
 		{C68B2D43-AB72-4AA9-A4C2-D4B09FC87D7B} = {454F22FF-F2D0-45D9-8FAB-DD17920296DA}
 		{BEE54E9D-9BD1-41AE-A3C7-2771892074B7} = {454F22FF-F2D0-45D9-8FAB-DD17920296DA}
 		{CA59EB44-297C-4B09-8142-41ACF5615EBC} = {454F22FF-F2D0-45D9-8FAB-DD17920296DA}
-		{E4E63E63-C08F-4EE2-A250-B5F777FBEC13} = {934F2DB0-B42C-4AE4-BC71-17B93CFBC9D6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7D5958CC-4A42-4BEB-8EFB-598D492CEF66}

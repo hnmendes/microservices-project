@@ -67,6 +67,11 @@ services:
       context: .
       dockerfile: src/Gateway.Api/OcelotApiGw/Dockerfile
   
+  frontend:
+    image: ${DOCKER_REGISTRY-}frontend
+    build:
+      context: .
+      dockerfile: src/Frontend/AspnetRunBasics/Dockerfile
 
 volumes:
   mongo_data:
